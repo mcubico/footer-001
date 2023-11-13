@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+body {
+  font-family: "Poppins";
+  background: #f8f9fb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  text-transform: capitalize;
+}
+
+#app {
+  width: 100%;
+  height: auto;
+}
+
+#home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  background: #0a1535;
+  color: #f9f9f9;
+}
+footer section {
+  padding: 0 50px;
+}
+footer section.call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 50px 40px;
+  margin-top: -99px 20px 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #773ecb, #2663ff);
+}
+footer section.call-to-action h2 {
+  color: rgba(255, 255, 255, 0.7);
+}
+footer section.call-to-action button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 40px 0 44px;
+  width: 100%;
+  height: 40px;
+  background: #0a1536;
+  border: 0;
+  border-radius: 30px;
+  color: #f9f9f9;
+  font-family: inherit;
+  font-size: 16px;
+}
+footer section.footer-info {
+  padding-top: 30px;
+}
+footer section.footer-info img {
+  display: block;
+  height: 30px;
+  margin: 0 0 30px;
+}
+footer section.footer-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+}
+footer section.footer-info ul li a {
+  display: block;
+  margin-bottom: 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+footer section.footer-info h3 {
+  color: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+footer section.copyright {
+  padding-top: 10px;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 13px;
+}
+
+@media (width <= 480px) {
+  footer {
+    position: relative;
+  }
+  footer section.call-to-action {
+    border-radius: 3px;
+  }
+  footer section.copyright {
+    font-size: 9px;
+  }
+}
+@media (width > 480px) {
+  footer section.call-to-action button {
+    width: 70%;
+  }
+  footer section.footer-info ul {
+    padding-right: 10%;
+  }
+}
+@media (width > 600px) {
+  footer section.call-to-action {
+    flex-direction: row;
+    min-height: 140px;
+    margin-top: -70px;
+    padding: 30px 50px 30px;
+  }
+  footer section.call-to-action button {
+    width: auto;
+    padding: 0 20px 0 24px;
+  }
+  footer section.footer-info ul {
+    grid-template-columns: repeat(4, 2fr);
+    padding-right: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
