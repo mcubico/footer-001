@@ -2,4 +2,4 @@
 
 Este componente web es responsive y esta elaborado con html y css.
 
-Usalo y dejame tus comentstios .
+Es un footer ideal para paginas web elegantes y dinamicas al mismo tienoi. Usalo y dejame tus comentstios .
